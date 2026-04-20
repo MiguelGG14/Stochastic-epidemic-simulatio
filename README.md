@@ -5,7 +5,7 @@ It was completed as part of the **ISC2 – Introduction to Stochastic Modelling*
 
 The repository contains:
 - `notebook.ipynb` – full implementation of simulations, analytics, and plots  
-- `project_tasks.md` – list of all project questions and objectives  
+- `Task.md` – list of all project questions and objectives  
 - `README.md` – overview and usage instructions
 
 ---
