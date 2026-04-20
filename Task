@@ -1,0 +1,81 @@
+# Tasks and Questions
+
+This project focuses on simulating a stochastic SIRD epidemic model using a Continuous-Time Markov Chain (CTMC) and Gillespie’s algorithm.  
+Below is the full list of questions and tasks that must be addressed, corresponding to the instructions from the ISC2 project description.
+
+---
+
+## **1. Transition Probability Matrix for \( N = 3 \)**  
+Construct the complete infinitesimal transition probability matrix for the SIRD Markov chain when  
+\( N = 3 \).  
+This includes deriving the generator matrix \( Q \) and computing the first-order approximation:
+
+$$
+P(\Delta t) \approx I + Q \Delta t.
+$$
+
+---
+
+## **2. Simulation of 100 SIRD Trajectories**  
+Simulate 100 trajectories of the SIRD process using Gillespie’s algorithm with:
+
+- \( N = 1000 \)  
+- Initial state: \( (S(0), I(0), R(0)) = (990, 10, 0) \)  
+- Parameters: \( \beta = 0.2, \gamma = 0.1, \nu = 0.001 \)
+
+Record all \( (S, I, R, D) \) values over time.
+
+---
+
+## **3. Epidemic Duration: Mean and Variance**  
+For each trajectory, compute the extinction time:
+
+$$
+T_{\text{ext}} = \inf \{ t \ge 0 : I(t) = 0 \}.
+$$
+
+Then compute:
+- The empirical mean \( \hat{T}_{\text{ext}} \)
+- The empirical variance
+
+---
+
+## **4. Distribution of I(Text/2)  
+At half of the mean extinction time \( \hat{T}_{\text{ext}}/2 \), evaluate the number of infected individuals for each simulation and plot its histogram.
+
+---
+
+## **5. Final Epidemic Size**  
+For each trajectory, compute the final epidemic size:
+
+$$
+\text{Final Size} = N - S(T_{\text{ext}})
+$$
+
+Then compute:
+- The empirical mean  
+- The empirical variance
+
+---
+
+## **6. Plot 10 Full SIRD Trajectories**  
+Plot the compartments \( S(t), I(t), R(t), D(t) \) for at least 10 different simulations on one figure.
+
+---
+
+## **7. Estimation of the Basic Reproduction Number \( R_0 \)**  
+Propose and implement a method to estimate \( R_0 \) from real (or simulated) early-phase epidemic data.  
+This involves:
+- Using early exponential growth of infections
+- Estimating the growth rate \( r \)
+- Estimating the mean infectious duration
+- Combining them to obtain \( R_0 \)
+
+---
+
+## **8. Model Extension: Adding a Latent (Exposed) Class**  
+Modify the SIR model by adding an exposed class \( E \), producing a SEIRD model.  
+Provide:
+- The new CTMC state space
+- All transition rates
+- The corresponding updated generator matrix \( \tilde{Q} \)
