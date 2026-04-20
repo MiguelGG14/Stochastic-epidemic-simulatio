@@ -1,4 +1,6 @@
 # Stochastic SIRD Epidemic Simulation (CTMC)
+Authors: MiguelGG14, andri-10, Abubakar17
+
 
 This project implements and analyses a stochastic SIRD epidemic model using a Continuous-Time Markov Chain (CTMC) and Gillespie’s algorithm.  
 It was completed as part of the **ISC2 – Introduction to Stochastic Modelling** course at Université de Technologie de Compiègne.
