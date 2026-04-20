@@ -38,7 +38,7 @@ The simulation is performed using **Gillespie’s algorithm**, generating full s
 ✔ Estimation of the basic reproduction number \( R_0 \) from early exponential growth  
 ✔ SEIRD extension including a latent (exposed) compartment  
 
-All results are reproducible directly from the notebook.
+(All results are reproducible directly from the notebook.)
 
 ---
 
@@ -46,7 +46,7 @@ All results are reproducible directly from the notebook.
 
 1. Open the notebook: 
 ```bash
-project.ipynb
+Simulation_SIR(D).ipynb
 ```
 
 2. Run all cells to reproduce:
